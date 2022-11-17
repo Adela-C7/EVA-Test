@@ -5,6 +5,43 @@ body {
   /* overflow-x: hidden; */
 }
 
+/* NavBar */
+
+.logo {
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+.navbar-brand img {
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 0.5em 1em;
+  }
+  .navbar-nav {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav {
+  border-top: 2px solid #fff;
+  margin-top: 0.5em;
+}
+
+/* End of NavBar */
+
 /* Header */
 .titlebox {
   height: 5rem;
@@ -28,32 +65,35 @@ body {
   margin-right: 2rem;
   top: -5%;
   left: 10%;
-  min-width: 10rem;
+}
+
+img {
+  width: 100%;
 }
 
 .contentbox {
   background-color: white;
-  border: solid 6px #8eacad;
-  width: 24em;
-  height: 30em;
-  padding: 1rem;
+  border: solid 6px #6ea4a1;
+  width: 70%;
+  margin: 1rem;
+  padding: 2rem;
 
   position: absolute;
   z-index: 3;
 
-  left: 5em;
-  bottom: 1em;
+  left: -10%;
+  top: 60%;
 }
 
 /* Footer Section */
 .footer {
-  background: #8eacad;
+  background: #6ea4a1;
   padding: 30px 0px;
   font-family: "Play", sans-serif;
   text-align: center;
 }
 
-.footer .row {
+.footer .footerrow {
   width: 100%;
   margin: 1% 0%;
   padding: 0.6% 0%;
@@ -61,26 +101,26 @@ body {
   font-size: 0.8em;
 }
 
-.footer .row a {
+.footer .footerrow a {
   text-decoration: none;
   color: white;
   transition: 0.5s;
 }
 
-.footer .row a:hover {
+.footer .footerrow a:hover {
   color: #444;
 }
 
-.footer .row ul {
+.footer .footerrow ul {
   width: 100%;
 }
 
-.footer .row ul li {
+.footer .footerrow ul li {
   display: inline-block;
   margin: 0px 30px;
 }
 
-.footer .row a i {
+.footer .footerrow a i {
   font-size: 2em;
   margin: 0% 1%;
 }
@@ -90,12 +130,12 @@ body {
     text-align: left;
     padding: 5%;
   }
-  .footer .row ul li {
+  .footer .footerrow ul li {
     display: block;
     margin: 10px 0px;
     text-align: left;
   }
-  .footer .row a i {
+  .footer .footerrow a i {
     margin: 0% 3%;
   }
 }
