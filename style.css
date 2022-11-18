@@ -1,14 +1,14 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  /* font-size: 1em; */
-  /* overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
+body {
+  cursor: none;
 }
 
 /* NavBar */
-
-.logo {
-}
 
 .navbar-brand {
   margin-right: 0;
@@ -41,6 +41,36 @@ body {
 }
 
 /* End of NavBar */
+
+/* Cursor Part */
+
+/* .cursor {
+  background-image: url("./img/aboutUs/camera.png");
+  width: 3rem;
+  height: 3rem;
+} */
+
+.cursor {
+  background-image: url("./img/aboutUs/camera.png");
+
+  z-index: 20;
+  width: 3rem;
+  height: 3rem;
+  /* border: 2px solid black;
+  border-radius: 50%; */
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.cursor:active {
+  background-image: url("./img/aboutUs/camera2.png");
+  z-index: 20;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
 
 /* Header */
 .titlebox {
